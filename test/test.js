@@ -20,7 +20,7 @@ chai.use(chaiHttp)
     nextCursor++;
     return { 'color': nextColor }
   }
-  const getCurrentCulor = () => {
+  const getCurrentColor = () => {
     return nextCursor > 0 ? `${colorKey}${nextCursor - 1}` : `${colorKey}O`
   }
 // <-- FIN
@@ -71,7 +71,7 @@ describe('POST /colors', () => {
           expect(res).to.be.json;
           expect(res.body).to.be.an('object');
           expect(res.body.results).to.be.an('array');
-          expect(res.body.results).to.include(getCurrentCulor());
+          expect(res.body.results).to.include(getCurrentColor())
           done();
         } else {
           console.log(err);
@@ -91,7 +91,7 @@ describe('GET /colors', () => {
           expect(res).to.be.json;
           expect(res.body).to.be.an('object');
           expect(res.body.results).to.be.an('array');
-          expect(res.body.results).to.be(true);
+          expect(res.body.results).to.eql(['RED', 'GREEN', 'BLUE', getCurrentColor()]);
           done();
         } else {
           console.log(err);
