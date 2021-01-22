@@ -2,6 +2,7 @@
 
 Il s’agit d’une petite API avec un GET qui permet de récuperer une liste de couleur et de faire un POST sur de nouvelles valeurs : route, /colors.
 Pour executer l’API : ```npm start```
+
 Pour executer les tests : ```npm test```
 
 # Préconfig
@@ -32,7 +33,7 @@ Voici les specs pour réaliser les tests d'intégration :
       d. Vérifier que le résultat du body est bien un array
       e. Vérifier que le contenu retourné est correct
 
-# Installation && Exécution 
+# Installation && Exécution des tests
 
 ```git clone https://github.com/MDrapala/mds_b3_MDrapala_test_integration.git```
 
