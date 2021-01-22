@@ -34,7 +34,7 @@ Voici les specs pour réaliser les tests d'intégration :
 
 # Installation && Exécution 
 
-```git clone https://github.com/MDrapala/mds_b3_MDrapala_test_unit.git```
+```git clone https://github.com/MDrapala/mds_b3_MDrapala_test_integration.git```
 
 ```cd mds_b3_MDrapala_test_unit```
 
